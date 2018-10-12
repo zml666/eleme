@@ -14,14 +14,14 @@ const config = require("./config");
 // 输出html页面到指定目录
 gulp.task("copy:html",()=>{
     return gulp.src("./src/**/*.html")
-               .pipe(gulp.dest("./dist"));
+               .pipe(gulp.dest("./dev"));
 })
 
 // 编译sass并输出到指定目录
 gulp.task("compile:sass",()=>{
     return gulp.src("./src/css/**/*.scss")
             .pipe(sass({outputStyle:"compressed"}).on('error',sass.logError))
-            .pipe(gulp.dest("./dist/css"));
+            .pipe(gulp.dest("./dev/css"));
     /* 
       outputStyle:
         嵌套输出方式 nested
@@ -35,18 +35,18 @@ gulp.task("compile:sass",()=>{
 gulp.task("package:js",()=>{
     return gulp.src("./src/js/**/*.js")
             .pipe(webpack(config.webpack_config))
-            .pipe(gulp.dest("./dist/js"))
+            .pipe(gulp.dest("./dev/js"))
 })
 
 // 输出静态lib文件
 gulp.task("copy:lib",()=>{
     return gulp.src("./src/lib/**/*")
-            .pipe(gulp.dest("./dist/lib"));
+            .pipe(gulp.dest("./dev/lib"));
 })
 
 // 开启热更新服务器
 gulp.task("webserver",()=>{
-    return gulp.src("./dist")
+    return gulp.src("./dev")
             .pipe(webserver(config.server_config));
 })
 
@@ -62,8 +62,8 @@ gulp.task("watch",()=>{
     // 处理静态lib目录下文件的变化，包括新增和删除文件
     watch("src/lib",(vinyl)=>{  //路径中不要加./，加上之后经常出错
         if(vinyl.event==='unlink'){  //如果文件被删除了
-            let _path = vinyl.history[0].replace("\src","\dist");
-            del(_path);  //删除dist中的文件
+            let _path = vinyl.history[0].replace("\src","\dev");
+            del(_path);  //删除dev中的文件
         }else{
             gulp.start(["copy:lib"]); //执行一次copy:lib任务
         }
