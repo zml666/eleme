@@ -27,7 +27,7 @@ gulp.task("compile:sass",()=>{
         嵌套输出方式 nested
         展开输出方式 expanded 
         紧凑输出方式 compact 
-        压缩输出方式 compressed 
+        压缩输出方式 compresse
     */
 })
 
