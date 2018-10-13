@@ -3,6 +3,7 @@
 body{
     height: 100%;
 }
+// 顶部定位
 header{
     padding: 0.2667rem 0.3733rem 0;
     background: linear-gradient(90deg,#0af,#0085ff);
@@ -38,6 +39,7 @@ header{
     }
 }
 
+// 底部
 footer{
     position: fixed;
     bottom: 0;
@@ -80,6 +82,7 @@ footer{
     }
 }
 
+// 搜索框
 .search{
     margin-top: -1px;
     position: sticky;
@@ -106,4 +109,92 @@ footer{
             font-size: 0.3733rem;
         }
     }
+}
+
+// 所有轮播图的样式
+.swiper-container{
+    width: 100%;
+    height: 4.7225rem;
+}
+// 修改分页器的样式
+.swiper-pagination-bullet{
+    width: 0.24rem;
+    height: 0.04rem;
+    border-radius: 0;
+    margin: 0 0.0667rem;
+}
+.swiper-pagination-bullet-active{
+    background-color: #00a6ff;
+    opacity: 0.2;
+}
+
+
+// 套餐加抢购
+.other-activity{
+    height: 6.2163rem;
+    padding: 0 0.2667rem 0.2133rem;
+    .main-activity{
+        display: flex;
+        justify-content: space-between;
+        height: 3.7333rem;
+        .combo,.purchase{
+            position: relative;
+            width: 4.2958rem;
+            flex-grow: 0;
+            padding: 0.32rem 0 0 0.4rem;
+            height: 3.415rem;
+            background: linear-gradient(0deg,#f4f4f4 5%,#fafafa 95%);
+        }
+        h3{
+            font-size: 0.4533rem;
+            font-weight: 700;
+            color: #333333;
+            height: 0.5333rem;
+            line-height: 0.5333rem;
+            margin-bottom: 0.1333rem;
+        }
+        .description{
+            height: 0.4267rem;
+            line-height: 0.4267rem;
+            font-size: 0.3467rem;
+            color: #777777;
+            margin-bottom: 0.24rem;
+        }
+        p{
+            font-size: 0.32rem;
+            font-weight: 700;
+            height: 0.384rem;
+            line-height: 0.384rem;
+        }
+        .combo p{
+            color: #af8260;
+        }
+        .purchase h3{
+            color: #e81919;
+        }
+        .purchase p span{
+            color: #e81919;
+        }
+        img{
+            position: absolute;
+            right: 0;
+            bottom: -0.2rem;
+            width: 3.2rem;
+            height: 2.1333rem;
+        }
+    }
+    .bottom-swiper{
+        height: 2.3467rem;
+        margin-top: 0.1333rem;
+    }
+}
+
+
+
+
+
+
+main{
+    height: 2000px;
+    background: lightcoral;
 }

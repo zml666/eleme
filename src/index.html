@@ -9,6 +9,7 @@
     <title>饿了么</title>
     <link rel="shortcut icon" href="https://h5.ele.me/logo-96x96.png" type="image/x-icon">
     <script src="./lib/js/flexible.js"></script>
+    <link rel="stylesheet" href="./lib/css/swiper.css">
     <link rel="stylesheet" href="./css/app.css">
 </head>
 
@@ -27,22 +28,64 @@
             </div>
         </div>
     </header>
+    <div class="wrapper">
+        <!-- 搜索框 -->
+        <section class="search">
+            <a href="#" class="search-content">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path fill-opacity=".38" d="M14.778 13.732a.739.739 0 1 1-1.056 1.036l-2.515-2.565a.864.864 0 0 1-.01-1.206 4.894 4.894 0 0 0 1.357-3.651c-.126-2.492-2.156-4.52-4.648-4.647a4.911 4.911 0 0 0-5.16 5.163c.126 2.475 2.13 4.496 4.605 4.642.451.026.896-.008 1.326-.1a.739.739 0 0 1 .308 1.446c-.56.12-1.137.164-1.72.13-3.227-.19-5.83-2.815-5.995-6.042a6.39 6.39 0 0 1 6.71-6.715c3.25.165 5.884 2.8 6.05 6.048a6.37 6.37 0 0 1-1.374 4.3l2.12 2.161z"></path>
+                </svg>
+                <span>搜索饿了么商家、商品名称</span>
+            </a>
+        </section>
 
-    <!-- 搜索框 -->
-    <section class="search">
-        <a href="#" class="search-content">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                <path fill-opacity=".38" d="M14.778 13.732a.739.739 0 1 1-1.056 1.036l-2.515-2.565a.864.864 0 0 1-.01-1.206 4.894 4.894 0 0 0 1.357-3.651c-.126-2.492-2.156-4.52-4.648-4.647a4.911 4.911 0 0 0-5.16 5.163c.126 2.475 2.13 4.496 4.605 4.642.451.026.896-.008 1.326-.1a.739.739 0 0 1 .308 1.446c-.56.12-1.137.164-1.72.13-3.227-.19-5.83-2.815-5.995-6.042a6.39 6.39 0 0 1 6.71-6.715c3.25.165 5.884 2.8 6.05 6.048a6.37 6.37 0 0 1-1.374 4.3l2.12 2.161z"></path>
-            </svg>
-            <span>搜索饿了么商家、商品名称</span>
-        </a>
-    </section>
+        <!-- 顶部导航 -->
+        <section class="swiper-container top-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
 
-    <!-- 内容区 -->
-    <main>
-        
-    </main>
+        <!-- 套餐加抢购 -->
+        <section class="other-activity">
+            <div class="main-activity">
+                <div class="combo">
+                    <h3>品质套餐</h3>
+                    <div class="description">搭配齐全吃得好</div>
+                    <p>立即抢购&nbsp;></p>
+                    <img src="https://fuss10.elemecdn.com/d/d4/16ff085900d62b8d60fa7e9c6b65dpng.png?imageMogr/format/webp/thumbnail/!240x160r/gravity/Center/crop/240x160/"
+                        alt="">
+                </div>
+                <div class="purchase">
+                    <h3>限量抢购</h3>
+                    <div class="description">超值美味&nbsp;9.9元起</div>
+                    <p><span>3369人</span>正在抢&nbsp;></p>
+                    <img src="https://fuss10.elemecdn.com/b/e1/0fa0ed514c093a7138b0b9a50d61fpng.png?imageMogr/format/webp/thumbnail/!240x160r/gravity/Center/crop/240x160/"
+                        alt="">
+                </div>
+            </div>
+            <div class="bottom-swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <img src="https://fuss10.elemecdn.com/0/8e/4c868669517697e5ce9f97eb8335ajpeg.jpeg?imageMogr/format/webp/thumbnail/568x/"
+                        alt="" class="swiper-slide">
+                    <img src="https://fuss10.elemecdn.com/3/81/10542f410b30f939574d01ac39208jpeg.jpeg?imageMogr/format/webp/thumbnail/568x/"
+                        alt="" class="swiper-slide">
+                    <img src="https://fuss10.elemecdn.com/4/4a/8194420774fb55cb7981dd99b4367jpeg.jpeg?imageMogr/format/webp/thumbnail/568x/"
+                        alt="" class="swiper-slide">
+                    <img src="https://fuss10.elemecdn.com/d/c9/4f49375dcaf53b151616e49c85a31jpeg.jpeg?imageMogr/format/webp/thumbnail/568x/"
+                        alt="" class="swiper-slide">
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
+        <!-- 内容区 -->
+        <main>
+
+        </main>
+    </div>
     <!-- 顶部菜单 -->
     <footer>
         <a href="#" class="active">
@@ -72,6 +115,8 @@
     </footer>
 
     <script src="./lib/js/zepto.min.js"></script>
+    <script src="./lib/js/swiper.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
