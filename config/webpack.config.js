@@ -12,6 +12,17 @@ module.exports = {
             {
                 test : /\.html$/,
                 use : "string-loader"
+            },
+            {
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/, // 代表不包括哪些
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env'],
+                        plugins: ['@babel/plugin-transform-runtime']
+                    }
+                }
             }
         ]
     }

@@ -261,14 +261,16 @@ footer{
         height: 0.08rem;
     }
     .more-filter{
-        width: 26px;
-        height: 26px;
+        width: 0.3467rem;
+        height: 0.3467rem;
         margin-left: 0.0533rem;
     }
 }
 
 main{
     padding-bottom: 1.3333rem;
+    height: 2000px;
+    background: lightcoral;
 }
 .shoplist-item{
     padding: 0.4rem 0;
@@ -401,6 +403,8 @@ main{
                     vertical-align: middle;
                 }
                 img{
+                    width: 0.16rem;
+                    height: 0.08rem;
                     vertical-align: middle;
                     opacity: .9;
                     margin-left: 0.1067rem;

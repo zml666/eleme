@@ -1,16 +1,3 @@
-// swiper
-$(document).ready(function () {
-    var myTopSwiper = new Swiper('.top-swiper', {
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        loop : true,
-    })
-    var myBottomSwiper = new Swiper('.bottom-swiper',{
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        loop : true,
-        autoplay:true,
-    })
-})
+import home_controller from './controllers/home_controller';
+
+home_controller.render();

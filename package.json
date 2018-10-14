@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp --gulpfile ./gulpfile-dev.js",
     "build": "gulp --gulpfile ./gulpfile-build.js",
-    "start": "npm run dev"
+    "mock": "json-server ./src/lib/mock/mock.js -r ./src/lib/mock/routes.json",
+    "start": "concurrently \"npm run mock\" \"npm run dev\""
   },
   "author": "",
   "license": "ISC",
