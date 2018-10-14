@@ -268,8 +268,6 @@ footer{
 }
 
 main.shoplist{
-    // height: 2000px;
-    // background: lightcoral;
     padding-bottom: 1.3333rem;
 }
 .shoplist-item{
@@ -410,5 +408,26 @@ main.shoplist{
             }
         }
 
+    }
+}
+
+
+// 回到顶部
+.back-to-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0.4rem;
+    bottom: 2rem;
+    background: lightcoral;
+    width: 1.1333rem;
+    height: 1.1333rem;
+    border-radius: 50%;
+    background: #fff;
+    border: 0.0133rem solid #999;
+    img{
+        width: 0.5333rem;
+        height: 0.5333rem;
     }
 }
