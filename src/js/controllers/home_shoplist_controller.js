@@ -1,11 +1,25 @@
-import home_shoplist from '../models/home_shoplist_models';
+import home_shoplist_models from '../models/home_shoplist_models';
+import home_shoplist from '../views/home_shoplist.html';
 
-const test = async ()=> {
-    let data = await home_shoplist.shoplist();
-    console.log(data);
+// 存放获取到的数据
+let datascourse = [];
+const getShopList = async ()=> {
+    let shoplistdata = await home_shoplist_models.shoplist();
+    datascourse = [...shoplistdata.content.data];
+    renderShopList();
 }
-test();
+const renderShopList = ()=>{
+    let _template = Handlebars.compile(home_shoplist);
+    let _template_string = _template({
+        "shoplist":datascourse
+    })
+    $("#shoplist").html(_template_string);
+}
 
-export default {
-    home_shoplist
+const render = ()=>{
+    getShopList();
+}
+
+export default{
+    render
 };

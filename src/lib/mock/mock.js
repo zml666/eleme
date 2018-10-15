@@ -1,9 +1,11 @@
 
 
-const list = require('./list.json');
+const shoplist = require('./shoplist.json');
+const menulist = require('./menulist.json');
 
 module.exports = () => {
     return {
-        shoplist: list
+        "shoplist": shoplist,
+        "menulist": menulist
     }
 }

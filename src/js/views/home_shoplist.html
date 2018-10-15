@@ -1,25 +1,26 @@
+{{#each shoplist}}
 <section class="shoplist-item">
     <div class="shop-info">
-        <img src="https://fuss10.elemecdn.com/3/c7/5c30fdb4035315a4dba768da6aa29png.png?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/"
+        <img src="{{this.img_src}}"
             alt="" class="shopInfo-img">
         <div class="shopInfo-main">
             <div class="shopInfo-main-title">
-                <h3>壹只蟹蟹煲饭(西直门店)</h3>
+                <h3>{{this.name}}</h3>
                 <span>···</span>
             </div>
             <div class="grade">
                 <div class="star"></div>
-                <span class="star-grade">4.7</span>
-                <span class="sale">月售5130单</span>
+                <span class="star-grade">{{this.rating}}</span>
+                <span class="sale">月售{{this.recent_order_num}}单</span>
             </div>
             <div class="distance">
                 <div class="distance-left">
-                    <span class="delivery-base-price">￥20起送</span>
-                    <span class="far-delivery-price">远距离配送费￥5</span>
+                    <span class="delivery-base-price">￥{{this.delivery_base_price}}起送</span>
+                    <span class="far-delivery-price">远距离配送费￥{{this.delivery_far_price}}</span>
                 </div>
                 <div class="distance-right">
-                    <span class="delivery-distance">5.73km</span>
-                    <span class="delivery-time">47分钟</span>
+                    <span class="delivery-distance">{{this.distance}}km</span>
+                    <span class="delivery-time">{{this.order_lead_time}}分钟</span>
                 </div>
             </div>
         </div>
@@ -33,7 +34,7 @@
             <div class="shop-activity-list">
                 <div class="shop-activity-list-item">
                     <span class="icon">首</span>
-                    <span class="about">新用户下单立减17元</span>
+                    <span class="about">新用户下单立减{{this.first_order_discounts}}元</span>
                 </div>
                 <div class="shop-activity-list-item">
                     <span class="icon">减</span>
@@ -48,3 +49,5 @@
         </div>
     </div>
 </section>
+
+{{/each}}

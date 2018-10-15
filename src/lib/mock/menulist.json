@@ -1,0 +1,32 @@
+{
+    "content": {
+        "data": [
+            {
+                "id": 161353727,
+                "name": "二十五块半（六道口店）",
+                "img_src": "https://fuss10.elemecdn.com/7/2f/ec7acf9053398fe22014a04b09573png.png?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/",
+                "rating": 4.7,
+                "recent_order_num": 6781,
+                "delivery_base_price": 20,
+                "delivery_far_price": 4,
+                "order_lead_time": 38,
+                "distance": 2.68,
+                "first_order_discounts": 17
+            },
+            {
+                "id": 161353727,
+                "name": "二十五块半（六道口店）",
+                "img_src": "https://fuss10.elemecdn.com/7/2f/ec7acf9053398fe22014a04b09573png.png?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/",
+                "rating": 4.7,
+                "recent_order_num": 6781,
+                "delivery_base_price": 20,
+                "delivery_far_price": 4,
+                "order_lead_time": 38,
+                "distance": 2.68,
+                "first_order_discounts": 17
+            }
+        ],
+        "message": "商品列表数据获取成功",
+        "stage": 1
+    }
+}

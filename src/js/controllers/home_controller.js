@@ -4,8 +4,6 @@ import home_footer from '../views/home_footer.html';
 import home_menu_nav from '../views/home_menu_nav.html';
 import home_shoplist from './home_shoplist_controller';
 
-// console.log(home_shoplist);
-
 const render = () => {
 
     // swiper轮播图初始化
@@ -42,7 +40,7 @@ const render = () => {
     })
 
     // 商品列表
-    // $("#shoplist").html(home_shoplist);
+    $("#shoplist").html(home_shoplist.render());
 }
 
 export default {
