@@ -13,7 +13,7 @@ const renderShopList = ()=>{
     let _template_string = _template({
         "shoplist":datascourse
     })
-    $("#shoplist").html(_template_string);
+    $("#shoplist").html($("#shoplist").html()+_template_string);
 }
 
 const render = ()=>{
