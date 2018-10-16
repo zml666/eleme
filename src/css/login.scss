@@ -1,0 +1,96 @@
+@import '_reset.scss';
+
+body{
+    background:#fff;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left:1rem;
+    width:8rem;
+}
+.header{
+    padding-top:1.0667rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    .logo{
+        display: flex;
+        justify-content: center;    
+        width:8rem;
+        height:1.4933rem;      
+        .logo_img{
+            width:3.7333rem;
+            height:1.4933rem;
+        }       
+    }
+    .message{
+        .mes_login{
+            color:#2395ff;
+            font-weight: 700;
+            border-bottom:0.0533rem solid rgb(35, 149, 255);
+            padding-bottom:0.1067rem;
+            margin-bottom:0.0533rem;
+        }
+        font-size: 0.3733rem;
+        margin-top:1.0667rem;     
+    } 
+} 
+.login{
+    display:flex;
+    justify-content: center;
+    // align-items: center;
+    width:8rem;
+    height:7.8933rem;
+    font-size: 0.3733rem;
+    position: relative;
+    .telnumber{
+        width:7.9467rem;
+        height:1.28rem;
+        margin-top:0.4267rem;
+        font-size: 0.3733rem;
+        display:flex;
+        justify-content: center;
+        outline: none;
+        border:0.0267rem solid rgb(221,221,221);
+        padding-left:0.2667rem;
+    }
+    .code{
+        position: absolute;
+        right:0.2667rem;
+        top:0.8533rem;
+        color:#ccc;
+    }
+    .tip{
+        margin-top:0.5333rem;
+        font-size:0.3733rem;
+        color:#999;
+        height:1.0667rem;
+        line-height: 0.5333rem;
+        .deal{
+            color:#2395ff;
+        }
+    }
+    .login_btn{
+      width:8rem;
+      height:1.12rem;
+      margin-top:0.8rem;
+      background:  rgb(76,217,111);
+      color:white;
+      font-size: 0.4267rem;
+      border-radius: 0.1333rem;
+      outline: none;
+    }
+    .about{
+        width:8rem;
+        display:flex;
+        height:0.3733rem;
+        justify-content: center;
+        margin-top:0.5333rem;
+        color:#999;
+        font-size: 0.32rem;
+    }
+} 

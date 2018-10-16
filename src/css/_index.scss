@@ -1,5 +1,5 @@
 
-.location{
+.top-location{
     padding: 0.2667rem 0.3733rem 0;
     display: flex;
     align-items: center;
@@ -419,7 +419,8 @@
         animation: cicle 1s linear infinite;
         -webkit-animation: cicle 1s linear infinite;
     }
+    margin-bottom: 1.3333rem;
 }
 #wrapper{
-    padding-bottom: 1.3333rem;
+    background-color: #fff;
 }

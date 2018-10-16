@@ -2,6 +2,7 @@
 import home_menu_nav from '../views/home_menu_nav.html';
 import home_shoplist from './home_shoplist_controller';
 import home_refresh_backtop from '../views/home_refresh_backtop.html';
+import home_header from '../views/home_header.html';
 
 const render = () => {
 
@@ -22,6 +23,11 @@ const render = () => {
         })
     })
 
+    // 渲染主页的顶部定位
+    $("#header").html(home_header);
+
+    // 清空profile中内容
+    $("#profile_wrapper").html("");
     
     // 渲染主页的菜单导航筛选商家
     $("#wrapper-top").html(home_menu_nav);
