@@ -30,17 +30,51 @@ const render = () => {
     // 渲染主页的菜单导航筛选商家
     $("#wrapper-top").html(home_menu_nav);
 
-    // 回到顶部按钮的出现与消失
+
+
+    // 渲染商品列表
+    home_shoplist.render();
+
+    let timer = null;
+
+    // 回到顶部按钮的出现与消失  
     $(document).on("scroll",function() {
-        if(document.documentElement.scrollTop>850){
+        console.log($("html").scrollTop(),$(document).height(),$(window).height());
+        if($("html").scrollTop()>850){
             $(".back-to-top").css("display","flex");
         }else{
             $(".back-to-top").css("display",'none');
         }
+
+        //滑到底部获取数据
+        if($("html").scrollTop()+$(window).height()>=$(document).height()){
+            $(".refresh").css("display","flex");
+            if(timer==null){
+                timer = setTimeout(() => {
+                    // console.log("aaaa");
+                    home_shoplist.render();
+                    $(".refresh").css("display",'none');
+                    clearTimeout(timer);
+                    timer=null;
+               }, 1000);
+            }
+        }
+         // 修改顶部搜索框的定位
+         if($("html").scrollTop()>800){
+             $(".search").css({
+                "position":"fixed"
+             });
+         }else{
+            $(".search").css("position","sticky");
+         }
     })
 
-    // 商品列表
-    $("#shoplist").html(home_shoplist.render());
+    // 回到顶部按钮
+    $(".back-to-top").tap(function() {
+        $("html").scrollTop(0);
+    })
+
+   
 }
 
 export default {

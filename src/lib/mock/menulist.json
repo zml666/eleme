@@ -2,137 +2,67 @@
     "content": {
         "data": [
             {
-                "id": 10000,
-                "name": "二十五块半（六道口店）",
-                "img_src": "https://fuss10.elemecdn.com/7/2f/ec7acf9053398fe22014a04b09573png.png?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/",
-                "rating": 4.7,
-                "recent_order_num": 6781,
-                "delivery_base_price": 20,
-                "delivery_far_price": 4,
-                "order_lead_time": 38,
-                "distance": 2.68,
-                "first_order_discounts": 17,
-                "discount_remission":"满22减11，满35减16，满48减22，满90减30"
+                "title":"美食",
+                "img_src":"https://fuss10.elemecdn.com/7/d8/a867c870b22bc74c87c348b75528djpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+                "page":1
             },
             {
-                "id": 10001,
-                "name": "北京麦当劳志新路餐厅",
-                "img_src": "https://fuss10.elemecdn.com/1/32/c75a72f674052473fb35b5c8ab1d7jpeg.jpeg?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/",
-                "rating": 4.9,
-                "recent_order_num": 2805,
-                "delivery_base_price": 0,
-                "delivery_far_price": 9,
-                "order_lead_time": 33,
-                "distance": 1.14,
-                "first_order_discounts": 25,
-                "discount_remission":"满22减11，满35减16，满48减22，满90减30"
+                "title":"商超便利",
+                "img_src":"https://fuss10.elemecdn.com/c/7e/76a23eb90dada42528bc41499d6f8jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+                "page":1
             },
             {
-                "id": 10002,
-                "name": "河北名吃驴肉火烧(农大店)",
-                "img_src": "https://fuss10.elemecdn.com/e/f2/4e7404a507058bd0041b58820f9f1png.png?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/",
-                "rating": 4.5,
-                "recent_order_num": 2963,
-                "delivery_base_price": 15,
-                "delivery_far_price": 4.5,
-                "order_lead_time": 31,
-                "distance": 1.72,
-                "first_order_discounts": 25,
-                "discount_remission":"满25减10，满50减15，满80减18"
+                "title":"水果",
+                "img_src":"https://fuss10.elemecdn.com/0/d0/dd7c960f08cdc756b1d3ad54978fdjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+                "page":1
             },
             {
-                "id": 10003,
-                "name": "晨香源一品粥(五道口店)",
-                "img_src": "https://fuss10.elemecdn.com/1/26/70be315aa30187951cf95a640ed42jpeg.jpeg?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/",
-                "rating": 4.5,
-                "recent_order_num": 2963,
-                "delivery_base_price": 15,
-                "delivery_far_price": 4.5,
-                "order_lead_time": 31,
-                "distance": 1.72,
-                "first_order_discounts": 25,
-                "discount_remission":"满25减10，满50减15，满80减18"
+                "title":"下午茶",
+                "img_src":"https://fuss10.elemecdn.com/7/a9/77ff360f7d3fde2d459727ad09fcfjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+                "page":1
             },
             {
-                "id": 10004,
-                "name": "杨铭宇黄焖鸡米饭(农大店)",
-                "img_src": "https://fuss10.elemecdn.com/8/a5/9fb1d369c4723dcc86e4326eeec93jpeg.jpeg?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/",
-                "rating": 4.7,
-                "recent_order_num": 3112,
-                "delivery_base_price": 0,
-                "delivery_far_price": 4.5,
-                "order_lead_time": 29,
-                "distance": 1.74,
-                "first_order_discounts": 17,
-                "discount_remission":"超值换购"
+                "title":"医药健康",
+                "img_src":"https://fuss10.elemecdn.com/7/0a/af108e256ebc9f02db599592ae655jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+                "page":1
             },
             {
-                "id": 10005,
-                "name": "高氏烧烤",
-                "img_src": "https://fuss10.elemecdn.com/4/61/ac96f50d5aa520980f2db54d57608jpeg.jpeg?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/",
-                "rating": 4.7,
-                "recent_order_num": 813,
-                "delivery_base_price": 20,
-                "delivery_far_price": 7.5,
-                "order_lead_time": 24,
-                "distance": 2.79,
-                "first_order_discounts": 17,
-                "discount_remission":"满38减20，满68减35，满98减45，满199减68，满299减99"
+                "title":"浪漫鲜花",
+                "img_src":"https://fuss10.elemecdn.com/3/01/c888acb2c8ba9e0c813f36ec9e90ajpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+                "page":1
             },
             {
-                "id": 10006,
-                "name": "麻辣鸡架(北京总店)",
-                "img_src": "https://fuss10.elemecdn.com/2/c7/bd64f356f145acfe861cb22d5b556png.png?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/",
-                "rating": 4.8,
-                "recent_order_num": 3290,
-                "delivery_base_price": 20,
-                "delivery_far_price": 5,
-                "order_lead_time": 37,
-                "distance": 1.24,
-                "first_order_discounts": 15,
-                "discount_remission":"满10减9，满20减12，满35减15，满50减20，满70减30"
+                "title":"厨房生鲜",
+                "img_src":"https://fuss10.elemecdn.com/c/21/e42997b86b232161a5a16ab813ae8jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+                "page":1
             },
             {
-                "id": 10007,
-                "name": "麦堡王炸鸡汉堡(北航店)",
-                "img_src": "https://fuss10.elemecdn.com/4/84/91a05d4016a0057e301c43f3f25acpng.png?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/",
-                "rating": 4.6,
-                "recent_order_num": 5954,
-                "delivery_base_price": 20,
-                "delivery_far_price": 3,
-                "order_lead_time": 35,
-                "distance": 2.59,
-                "first_order_discounts": 17,
-                "discount_remission":"满30减16，满50减25，满80减35"
+                "title":"跑腿代购",
+                "img_src":"https://fuss10.elemecdn.com/e/58/bceb19258e3264e64fb856722c3c1jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+                "page":1
             },
             {
-                "id": 10008,
-                "name": "川妹儿(六道口店)",
-                "img_src": "https://fuss10.elemecdn.com/7/11/9acac29877ae5f2d2ebc5b1128715png.png?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/",
-                "rating": 4.4,
-                "recent_order_num": 1852,
-                "delivery_base_price": 20,
-                "delivery_far_price": 4,
-                "order_lead_time": 33,
-                "distance": 1.73,
-                "first_order_discounts": 17,
-                "discount_remission":"满30减16，满50减25，满80减35"
+                "title":"地方小吃",
+                "img_src":"https://fuss10.elemecdn.com/7/d6/6f2631288a44ec177204e05cbcb93jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+                "page":1
             },
             {
-                "id": 10009,
-                "name": "望京小腰烧烤(宇宙中心店)",
-                "img_src": "https://fuss10.elemecdn.com/d/3d/8950b2f4e2328666292a24c65932apng.png?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/",
-                "rating": 4.7,
-                "recent_order_num": 1774,
-                "delivery_base_price": 25,
-                "delivery_far_price": 6.8,
-                "order_lead_time": 41,
-                "distance": 2.55,
-                "first_order_discounts": 17,
-                "discount_remission":"满50减33，满79减44，满100减55，满118减65，满188减80"
+                "title":"签到领红包",
+                "img_src":"https://fuss10.elemecdn.com/5/de/bebe83947afee0b0f38257b0e3866jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+                "page":1
+            },
+            {
+                "title":"地方菜系",
+                "img_src":"https://fuss10.elemecdn.com/a/8a/ec21096d528b7cfd23cdd894f01c6jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+                "page":2
+            },
+            {
+                "title":"麻辣烫",
+                "img_src":"https://fuss10.elemecdn.com/e/c7/b7ba9547aa700bd20d0420e1794a8jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+                "page":2
             }
         ],
-        "message": "商品列表数据获取成功",
+        "message": "菜单列表数据获取成功",
         "stage": 1
     }
 }
