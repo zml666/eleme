@@ -2,7 +2,8 @@
 module.exports = {
     mode : "production",
     entry: {
-        app : "./src/js/app.js"
+        app : "./src/js/app.js",
+        login:"./src/js/login.js"
     },
     output: {
         filename: '[name].js',
