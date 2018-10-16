@@ -1,6 +1,7 @@
 
 import home_menu_nav from '../views/home_menu_nav.html';
 import home_shoplist from './home_shoplist_controller';
+import home_refresh_backtop from '../views/home_refresh_backtop.html';
 
 const render = () => {
 
@@ -24,6 +25,9 @@ const render = () => {
     
     // 渲染主页的菜单导航筛选商家
     $("#wrapper-top").html(home_menu_nav);
+
+    // 渲染刷新和回到顶部
+    $("#refresh-backtop").html(home_refresh_backtop);
 
     // 渲染商品列表
     home_shoplist.render();
