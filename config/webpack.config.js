@@ -3,7 +3,8 @@ module.exports = {
     mode : "production",
     entry: {
         app : "./src/js/app.js",
-        login:"./src/js/login.js"
+        login:"./src/js/login.js",
+        profile_info:"./src/js/profile_info.js"
     },
     output: {
         filename: '[name].js',

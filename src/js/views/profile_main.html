@@ -3,7 +3,7 @@
         <div class="logo">
             <img class="logo_img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAM1BMVEXE5/XI6fbT7fjW7/jl9fvw+f3////a8Pnt+PzL6vb7/v7i8/rP7Pf4/P7e8vn0+/3p9vvI4mwRAAACI0lEQVR4Ae3YBxbkIAgGYDCKgqbc/7LbS5hJexvMNr7Xp/0j9oBzzjnnnHPOuX8Qhq/wycwhJvopxQGfSM2F3pXcOZuj0DaJDN1gpSMRoY9B6Jhk6AALnSsI1tpIV0jrX+ZHyp3putwzN9XA8BmHmvolN1LGCWENp5GUADZYVGyGd1lFC4OJmVYqbKu0MoOFem22TPrv3cf004ywa6A1htvStdw2Go+vcC03C5EuzV3pSv/iQsqCllN4gj1tJmWC+342JV1dx8cGBuR8nEbznVHNkQW28UxKBeV+pRtsCrrMEsDGeLIIVlISgg08HqiYSIlgJRxWuoku8wA2VCU3dwVlZugQnE4PnYt+t05wR6FvysmeIPltrC8mC3U97t65bRQq9whO23uC6gRp9sFMa9NOJ8z2wWF3T1BvDfdXzLLb4oL7a1m9P53mq50PwSR42ltA2v6eEC2uFGH38Ja39wRVDUGDTSJudH+ETSg3G6wuESO8anxSpww3xF+aGvX+yWvQZ72rohQ0O+wFeI6q9QiPYr0cPGih31Rs1pfjBy2/KxnlYjJPtTYwNFy7CE5CnyzGxf4pMWzhQkTWyTjTWkV4hVW6PNhjIWUZdF+okgiDnSakSakhMHAItQhpAXom7xN+8nG1OnTawkRXJARzlc5V6KElOpYadJJH2jdm6CjPtG3O0FmL780eY4MncI5J6CtJMTM8iwODc84555xzzv0PPgKMKi2olgNo0QAAAABJRU5ErkJggg==">
         </div>
-        <div class="option_center">
+        <div class="option_center"id="option_first">
             <div class="login_content">
                 <a class="resgister" href="http://localhost:8080/login.html">登录/注册</a>
             </div>
@@ -18,18 +18,38 @@
                 <span class="enjoy">登录后享受更多特权</span>
             </div>
         </div>
+        <div class="option_center after_center" id="option_second">
+            <div class="login_content">
+                <a class="resgister" href="javascript:void(0);"></a>
+            </div>
+            <div class="login_after">
+                <svg class="phone" fill="#fff">
+                    <use xlink:href="#mobile">
+                        <svg viewBox="0 0 655 1024" id="mobile" width="100%" height="100%">
+                            <path d="M0 122.501v778.998C0 968.946 55.189 1024 123.268 1024h408.824c68.52 0 123.268-54.846 123.268-122.501V122.501C655.36 55.054 600.171 0 532.092 0H123.268C54.748 0 0 54.846 0 122.501zM327.68 942.08c-22.622 0-40.96-18.338-40.96-40.96s18.338-40.96 40.96-40.96 40.96 18.338 40.96 40.96-18.338 40.96-40.96 40.96zM81.92 163.84h491.52V819.2H81.92V163.84z"></path>
+                        </svg>
+                    </use>
+                </svg>
+                <span class="enjoy"></span>
+            </div>
+        </div>
         <div class="right_arrow">
-            <svg class="right_content" fill="#fff">
-                <use xlink:href="#arrow-right">
-                    <svg viewBox="0 0 1024 1024" id="arrow-right" class="icon" width="100%" height="100%"><path d="M716.298 417.341l-.01.01L307.702 7.23l-94.295 94.649 408.591 410.117-408.591 410.137 94.295 94.639 502.891-504.76z" class="selected"></path></svg> 
-                </use>
-            </svg>
+            <a href="http://localhost:8080/profile_info.html" id="go">
+                <svg class="right_content" fill="#fff">
+                    <use xlink:href="#arrow-right">
+                        <svg viewBox="0 0 1024 1024" id="arrow-right" class="icon" width="100%" height="100%"><path d="M716.298 417.341l-.01.01L307.702 7.23l-94.295 94.649 408.591 410.117-408.591 410.137 94.295 94.639 502.891-504.76z" class="selected"></path></svg> 
+                    </use>
+                </svg>
+            </a>
         </div>
     </div>      
 </div>            
 <div class="pay_money">    
     <a class="wallet" href="javascript:void(0);">
-        <p>
+        <p class="money_after"id="qianbao" >
+            0.00<span class="small">元</span>
+        </p>
+        <p class="money">
             <svg class="wallet_img" fill="#0098fb">
                 <use xlink:href="#profile-balance">
                     <svg viewBox="0 0 48 48" id="profile-balance" width="100%" height="100%">
@@ -42,7 +62,10 @@
     <p>钱包</p> 
     </a>   
     <a class="packet wallet" href="javascript:void(0);">
-        <p>
+        <p class="money_after" id="hongbao">
+            0<span class="small">个</span>
+        </p>
+        <p class="money">
             <svg class="wallet_img"fill="#ff5f3e"><use xlink:href="#luckybag">
                 <svg viewBox="0 0 48 48" id="luckybag" width="100%" height="100%"><path fill-rule="evenodd" d="M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24 24-10.7 24-24S37.3 0 24 0zm7.6 15H16.4c.1.1.1.2.1.4.4 2.5 3.3 4.3 7.1 4.4 2.4 0 4.8-.6 6.1-1.6.4-.3 1.1-.3 1.4.2.3.5.3 1.1-.2 1.4-1.6 1.3-4.3 2.1-7.1 2.1h-.5c-3.9-.2-7-2-8.3-4.6V32c0 .5.7 1 1.4 1h15.2c.8 0 1.4-.5 1.4-1V16c0-.5-.7-1-1.4-1zM35 32c0 1.7-1.5 3-3.4 3H16.4c-1.9 0-3.4-1.3-3.4-3V16c0-1.4 1-2.5 2.5-2.9h.2c.1-.1.3-.1.4-.1h15.5c1.9 0 3.4 1.3 3.4 3v16z"></path></svg>
             </use></svg>
@@ -52,7 +75,10 @@
         </p>
     </a>
     <a class="gold wallet" href="javascript:void(0);">
-        <p>
+        <p class="money_after" id="jinbi">
+            0<span class="small">个</span>
+        </p>
+        <p class="money">
             <svg class="wallet_img"fill="#6ac20b"><use xlink:href="#profile-coins">
                 <svg viewBox="0 0 48 48" id="profile-coins" width="100%" height="100%"><path fill-rule="evenodd" d="M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24 24-10.7 24-24S37.3 0 24 0zm-9 26.8v3.3c0 1.2 3.6 2.9 9 2.9s9-1.7 9-2.9v-3.3c-2.1 1.3-5.6 1.9-9 1.9-3.4.1-6.9-.6-9-1.9zM24 15c-5.8 0-9 1.8-9 2.8 0 1 3.2 2.8 9 2.8s9-1.8 9-2.8c0-1-3.2-2.8-9-2.8zm-9 5.6V24c0 .9 3.2 2.8 9 2.8s9-1.8 9-2.8v-3.4c-2.1 1.3-5.6 1.9-9 1.9-3.4 0-6.9-.6-9-1.9zM35 24v6.1c0 3.2-5.5 4.9-11 4.9s-11-1.7-11-4.9V17.8c0-3.1 5.5-4.8 11-4.8s11 1.6 11 4.8V24z"></path></svg> 
             </use></svg>

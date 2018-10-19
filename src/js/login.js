@@ -11,5 +11,4 @@ $('.login').on('blur','input',function(){
             //},320)    
         })
     }
-    
 })

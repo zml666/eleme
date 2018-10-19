@@ -54,6 +54,9 @@ body{
                 height:1.6rem;
             }
         }
+        .after_center{
+            display:none;
+        }
         .option_center{
             width:6.8533rem;
             height:1.6rem;
@@ -90,7 +93,8 @@ body{
                 }           
             }
         }
-        .right_arrow{
+        
+        .right_arrow{  
             width:0.2667rem;
             height:0.64rem;
             .right_content{
@@ -120,13 +124,32 @@ body{
             .wallet_img{
                 width:0.6933rem;
                 height:0.6933rem;
-            }     
+            }  
+            .money_after{
+                display:none;
+                font-size:0.6933rem;
+                font-weight: 700;
+                .small{
+                    font-size: 0.32rem;
+                    font-weight: 100;
+                }
+            }
+           
         }
         .packet{
             border-right:0.0133rem solid #ddd;
             border-left:0.0133rem solid #ddd;
         }
     }
+    #qianbao{
+        color:rgb(0,152,251);
+    }
+    #hongbao{
+        color:rgb(255,95,62);
+    }
+   #jinbi{
+        color:rgb(106,194,11);
+    }   
 .mylocation{
     height:1.2133rem;
     background:#fff;
