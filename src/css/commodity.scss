@@ -31,6 +31,8 @@
         top: 1.0667rem;
         left: 0;
         right: 0;
+        width: 2rem;
+        height: 2rem;
         margin: auto;
     }
     .store-detail{
@@ -210,9 +212,9 @@ main{
     flex-grow: 0;
     width: 7.9512rem;
     height: 2000px;
-    background: lightgreen;
 }
 .scroller{
+    padding-bottom: 1.28rem;
     dl{
         dt{
             padding: 0.2rem 0;
@@ -240,6 +242,7 @@ main{
                 position: relative;
                 h2{
                     font-weight: 700;
+                    width: 4rem;
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;

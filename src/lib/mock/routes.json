@@ -1,4 +1,5 @@
 {
     "/api/shoplist": "/shoplist",
-    "/api/menulist": "/menulist"
+    "/api/menulist": "/menulist",
+    "/api/commidity": "/commidity"
 }

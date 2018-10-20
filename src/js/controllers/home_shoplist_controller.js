@@ -6,7 +6,9 @@ let datascourse = [];
 const getShopList = async ()=> {
     let shoplistdata = await home_shoplist_models.shoplist();
     datascourse = [...shoplistdata.content.data];
-    renderShopList();
+    //将商品信息存到SessionStorage中
+    sessionStorage.setItem("shoplist",JSON.stringify(datascourse));
+    renderShopList(); 
 }
 const renderShopList = ()=>{
     let _template = Handlebars.compile(home_shoplist);

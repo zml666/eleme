@@ -1,0 +1,16 @@
+{{#each commidity}}
+<dd>
+    <img src="{{this.img_src}}"
+        alt="">
+    <div class="dd-right">
+        <h2>{{this.title}}</h2>
+        <p>月售<span>{{this.recent_order_num}}</span>份&nbsp;&nbsp;好评率<span>{{this.rating}}</span>%</p>
+        <h1>￥<span>{{this.price}}</span></h1>
+        <svg viewBox="0 0 44 44">
+            <path fill-rule="evenodd" d="M22 0C9.8 0 0 9.8 0 22s9.8 22 22 22 22-9.8 22-22S34.2 0 22 0zm10 24h-8v8c0 1.1-.9 2-2 2s-2-.9-2-2v-8h-8c-1.1 0-2-.9-2-2s.9-2 2-2h8v-8c0-1.1.9-2 2-2s2 .9 2 2v8h8c1.1 0 2 .9 2 2s-.9 2-2 2z"
+                clip-rule="evenodd"></path>
+        </svg>
+    </div>
+</dd>
+
+{{/each}}
