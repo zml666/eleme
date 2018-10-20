@@ -42,6 +42,18 @@ $(document).on("scroll", function () {
     }
 })
 
+// hammer手势
+
+let mybody = document.getElementsByTagName("body")[0];
+let hammer = new Hammer(mybody);
+hammer.on("panleft panright tap press", back);
+
+function back(ev) {
+    if(ev.type=="panright"){
+        window.location.href = "http://localhost:8080";
+    }
+}
+
 
 function GetQueryString(name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
