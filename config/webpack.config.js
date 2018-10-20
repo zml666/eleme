@@ -4,7 +4,8 @@ module.exports = {
     entry: {
         app : "./src/js/app.js",
         login:"./src/js/login.js",
-        profile_info:"./src/js/profile_info.js"
+        profile_info:"./src/js/profile_info.js",
+        commodity:"./src/js/commodity.js"
     },
     output: {
         filename: '[name].js',

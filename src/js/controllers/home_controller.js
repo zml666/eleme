@@ -50,12 +50,12 @@ const render = () => {
         }
 
         //滑到底部获取数据
-        if($("html").scrollTop()+$(window).height()>=$(document).height()){
+        if($("html").scrollTop()+$(window).height()+1>=$(document).height()){
             $(".refresh").css("display","flex");
             if(timer==null){
                 timer = setTimeout(() => {
-                    // console.log("aaaa");
                     home_shoplist.render();
+                    $("html").scrollTop($("html").scrollTop()+100);
                     $(".refresh").css("display",'none');
                     clearTimeout(timer);
                     timer=null;
@@ -71,6 +71,13 @@ const render = () => {
             $(".search").css("position","sticky");
          }
     })
+
+    //事件代理 为所有的商品添加单击事件
+    $("#shoplist").on("tap",".shoplist-item",function() {
+        let url = "http://localhost:8080/commodity.html?id="+$(this).attr("data-id");
+        window.location.href = url;
+    })
+
 
     // 回到顶部按钮
     $(".back-to-top").tap(function() {
