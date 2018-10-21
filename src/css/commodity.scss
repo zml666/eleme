@@ -183,9 +183,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    img{
+        width: 9.1467rem;
+        height: 2.3467rem;
+    }
 }
 
 main{
+    background-color: #f8f8f8;
     margin-top: 0.4rem;
     display: flex;
     justify-content: flex-end;
@@ -195,9 +200,10 @@ main{
     height: 100%;
 }
 #shoplist-nav ul{
-    width: 1.6533rem;
-    padding: 0 0.2rem;
+    width: 2.0533rem;
+    height: 100%;
     li{
+        padding: 0 0.2rem;
         height: 1.3177rem;
         display: flex;
         align-items: center;
@@ -205,7 +211,12 @@ main{
         font-size: 0.32rem;
         img{
             margin-right: 0.08rem;
+            width: 0.3467rem;
+            height: 0.3467rem;
         }
+    }
+    li.active{
+        background-color: #fff;
     }
 }
 #shoplist-info{
@@ -214,6 +225,7 @@ main{
     height: 2000px;
 }
 .scroller{
+    background-color: #fff;
     padding-bottom: 1.28rem;
     dl{
         dt{
