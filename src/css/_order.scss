@@ -1,0 +1,193 @@
+@import '_reset';
+body{
+    height: 100%;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+}
+.header{
+    height:1.1733rem;
+    background: linear-gradient(90deg,#0af,#0085ff);
+    color: #fff;
+    display:flex;
+    position: relative;  
+    justify-content: flex-start;
+    .left_arrow{
+        width:1.1733rem;
+        height:1.1733rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .ElemeHeader-leftArrow_1PLBnDh_0{
+            width:0.32rem;
+            height:0.5067rem;
+        } 
+    }  
+    .myself{
+        position: absolute;
+        font-weight: 700;
+        color:#fff;
+        font-size: 0.48rem;
+        height:1.1733rem;
+        line-height: 1.1733rem;
+        left:45%;
+    }
+}
+.login__after{
+    display: none;
+        .bkg_img{
+        padding-top:2.6667rem;
+        color:#333;
+        height:4.9867rem;
+        font-size: 0.32rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width:5.3333rem;
+            height:3.8533rem;
+        }
+        h3{
+            color:#6a6a6a;
+            font-size: 0.4533rem;
+            margin:0.3333rem 0 0.2667rem 0;
+        }
+    }
+    .checkout{
+        padding:0.2rem 0;
+        
+        height:0.7733rem;
+        p{
+            color:#999;
+            font-size: 0.32rem;
+            text-align: center;
+            .limited-svg{
+                width:0.12rem;
+                height:0.1867rem;
+                transform: rotate(90deg);
+            }
+        }
+    }
+    #order_data{
+        display:none;
+        background:#fff;
+    }
+    .data{
+        
+        width:9.6rem;
+        display:block;
+        padding-left:0.4rem;
+        margin-top:0.2667rem;
+        padding-top:0.3733rem;
+        height:2.8533rem;  
+        .order_detail{
+            
+            height:2.24rem;
+            display: flex;
+            justify-content: center;
+
+            .shop_logo{
+            width:1.12rem;
+            height:2.24rem;
+            padding-right:0.2667rem;
+            img{
+                width:0.8533rem;
+                height:0.8533rem;
+            } 
+            }
+            .shop_detail{
+                width:8.48rem;
+                height:2.48rem;
+                padding-right:0.3467rem;
+                .location_detail{
+                width:8.48rem;
+                height: 0.64rem; 
+                
+                display: flex;
+                justify-content: space-between; 
+                .location{
+                    display: block; 
+                    span{
+                        font-size: 0.4267rem;
+                        color:#333;
+
+                    } 
+                    ._left{
+                        width:0.1333rem;
+                        height:0.1867rem;
+                        margin-left:0.1333rem;
+                    }
+                }
+                .stats{
+                    color:#333;
+                    font-size:  0.3467rem; 
+                }
+                }
+                .date_time{
+                    color: #999;
+                }
+                .goods_detail{
+                height: 0.4133rem;
+                padding:0.4rem 0 0.4rem 0;
+                display: flex;
+                justify-content: space-between;
+
+                .goods{
+                    display: block;
+                    color:#666;
+                    font-size: 0.3467rem;
+                }
+                .price{
+                    display: block;
+                    color:#333;
+                    font-size: 0.3467rem;
+                }
+                }
+            }
+        
+        }
+    }  
+    ._shop_detail{
+        height:1.28rem;
+        width:8.48rem;
+        padding-bottm:0.2667rem;
+    }
+}
+
+
+
+
+.login_before{
+    .bkg_img{
+        padding-top:2.6667rem;
+        color:#333;
+        height:7.4933rem;
+        font-size: 0.32rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width:5.3333rem;
+            height:5.3333rem;
+        }
+        h3{
+            color:#6a6a6a;
+            font-size: 0.4533rem;
+            margin:0.3333rem 0 0.2667rem 0;
+            font-weight: 400;  
+        }
+        button{
+            width:3.2rem;
+            height:1.04rem;
+            padding:0.2667rem;
+            outline: none;  
+            border:none;
+            background:#56d176;
+            color:#fff;
+            font-size:0.3733rem; 
+            text-align:center;
+        }
+    }  
+}
