@@ -1,6 +1,11 @@
 import order_header from '../views/order_header.html'
 import order_main from '../views/order_main.html'
 const render=function(){
+    // 解除事件绑定
+    $(document).off("scroll");
+    $('#wrapper-top').html("");
+    $('#shoplist').html("");
+    $('#refresh-backtop').html("");
     $('#header').html(order_header);
     $('#profile_wrapper').html(order_main);
     login_after();
