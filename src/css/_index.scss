@@ -269,8 +269,14 @@
                 color: #666;
                 font-size: 0.2933rem;
                 .star{
+                    margin-top: -0.04rem;
                     width: 1.4933rem;
                     height: 0.2667rem;
+                    padding-right: 0.0667rem;
+                    img{
+                        width: 1.4933rem;
+                        height: 0.2667rem;
+                    }
                 }
                 .star-grade{
                     margin-right: 0.1067rem;
